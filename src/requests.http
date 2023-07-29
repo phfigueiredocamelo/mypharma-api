@@ -1,0 +1,17 @@
+@baseURL = http://localhost:3000
+@products = {{baseURL}}/products
+###
+GET {{products}}
+  # ?name=Test
+  ?categories[]=MEDICAMENTO
+  &orderBy=amount
+  &order=DESC
+###
+
+###
+GET {{products}}/count
+###
+
+###
+POST {{products}}
+###
